@@ -1,0 +1,13 @@
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIbu.exe.config
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIbu.exe
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIbu.pdb
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.csprojResolveAssemblyReference.cache
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_MENU_UTAMA.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_LOGIN.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.Properties.Resources.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.csproj.GenerateResource.Cache
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.exe
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.pdb
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_BARANG.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_BARANG_DETAIL.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_SUPPLIER.resources
