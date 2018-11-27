@@ -16,7 +16,7 @@ namespace ApotekMutiaraIbu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FRM_LOGIN());
+            Application.Run(new FRM_MENU_UTAMA());
         }
     }
 }

@@ -52,7 +52,9 @@ namespace ApotekMutiaraIbu
 
         private void penjualanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FRM_PENJUALAN FJUAL = new FRM_PENJUALAN();
+            FJUAL.MdiParent = this;
+            FJUAL.Show();
         }
     }
 }

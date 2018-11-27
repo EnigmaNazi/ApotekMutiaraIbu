@@ -637,7 +637,7 @@
             this.btn_add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(255, 52);
-            this.btn_add.TabIndex = 58;
+            this.btn_add.TabIndex = 7;
             this.btn_add.Text = "Add";
             this.btn_add.UseVisualStyleBackColor = false;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
