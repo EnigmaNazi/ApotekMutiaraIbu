@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button_refresh = new System.Windows.Forms.Button();
-            this.button_search = new System.Windows.Forms.Button();
             this.txt_alamat_supplier = new System.Windows.Forms.TextBox();
             this.txt_telp_supplier = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -68,18 +67,6 @@
             this.button_refresh.Text = "Refresh";
             this.button_refresh.UseVisualStyleBackColor = false;
             this.button_refresh.Click += new System.EventHandler(this.button_refresh_Click);
-            // 
-            // button_search
-            // 
-            this.button_search.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_search.Location = new System.Drawing.Point(520, 29);
-            this.button_search.Margin = new System.Windows.Forms.Padding(4);
-            this.button_search.Name = "button_search";
-            this.button_search.Size = new System.Drawing.Size(112, 43);
-            this.button_search.TabIndex = 15;
-            this.button_search.Text = "Search";
-            this.button_search.UseVisualStyleBackColor = false;
             // 
             // txt_alamat_supplier
             // 
@@ -132,8 +119,9 @@
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(503, 42);
+            this.txt_search.Size = new System.Drawing.Size(623, 42);
             this.txt_search.TabIndex = 14;
+            this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // button_edit
             // 
@@ -223,7 +211,6 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.groupBox1.Controls.Add(this.txt_search);
-            this.groupBox1.Controls.Add(this.button_search);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 271);
@@ -231,7 +218,7 @@
             this.groupBox1.Size = new System.Drawing.Size(640, 418);
             this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pencarian berdasarkan Kode/Nama Pelanggan";
+            this.groupBox1.Text = "Pencarian berdasarkan Kode Supplier";
             // 
             // dataGridView1
             // 
@@ -307,7 +294,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FRM_SUPPLIER";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_SUPPLIER";
+            this.Text = "DATA SUPPLIER";
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -322,7 +309,6 @@
         #endregion
 
         private System.Windows.Forms.Button button_refresh;
-        private System.Windows.Forms.Button button_search;
         private System.Windows.Forms.TextBox txt_alamat_supplier;
         private System.Windows.Forms.TextBox txt_telp_supplier;
         private System.Windows.Forms.Label label8;

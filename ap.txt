@@ -1,0 +1,1 @@
+select stock kode barang from tabl barang 

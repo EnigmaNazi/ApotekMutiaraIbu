@@ -35,7 +35,6 @@
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.mASTERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataBarangDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRANSAKSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,7 +106,6 @@
             // 
             this.mASTERToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dataBarangToolStripMenuItem,
-            this.dataBarangDetailToolStripMenuItem,
             this.dataSupplierToolStripMenuItem});
             this.mASTERToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mASTERToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
@@ -118,21 +116,14 @@
             // dataBarangToolStripMenuItem
             // 
             this.dataBarangToolStripMenuItem.Name = "dataBarangToolStripMenuItem";
-            this.dataBarangToolStripMenuItem.Size = new System.Drawing.Size(265, 32);
+            this.dataBarangToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.dataBarangToolStripMenuItem.Text = "Data Barang";
             this.dataBarangToolStripMenuItem.Click += new System.EventHandler(this.dataBarangToolStripMenuItem_Click);
-            // 
-            // dataBarangDetailToolStripMenuItem
-            // 
-            this.dataBarangDetailToolStripMenuItem.Name = "dataBarangDetailToolStripMenuItem";
-            this.dataBarangDetailToolStripMenuItem.Size = new System.Drawing.Size(265, 32);
-            this.dataBarangDetailToolStripMenuItem.Text = "Data Barang Detail";
-            this.dataBarangDetailToolStripMenuItem.Click += new System.EventHandler(this.dataBarangDetailToolStripMenuItem_Click);
             // 
             // dataSupplierToolStripMenuItem
             // 
             this.dataSupplierToolStripMenuItem.Name = "dataSupplierToolStripMenuItem";
-            this.dataSupplierToolStripMenuItem.Size = new System.Drawing.Size(265, 32);
+            this.dataSupplierToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
             this.dataSupplierToolStripMenuItem.Text = "Data Supplier";
             this.dataSupplierToolStripMenuItem.Click += new System.EventHandler(this.dataSupplierToolStripMenuItem_Click);
             // 
@@ -153,6 +144,7 @@
             this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
             this.orderToolStripMenuItem.Size = new System.Drawing.Size(195, 32);
             this.orderToolStripMenuItem.Text = "Order";
+            this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
             // 
             // penerimaanToolStripMenuItem
             // 
@@ -259,7 +251,7 @@
             this.IsMdiContainer = true;
             this.Name = "FRM_MENU_UTAMA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_MENU_UTAMA";
+            this.Text = "MENU";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -293,6 +285,5 @@
         private System.Windows.Forms.ToolStripMenuItem bANTUANToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bantuanToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tentangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataBarangDetailToolStripMenuItem;
     }
 }

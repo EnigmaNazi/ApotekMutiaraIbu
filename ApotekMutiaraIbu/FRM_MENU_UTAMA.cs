@@ -24,13 +24,6 @@ namespace ApotekMutiaraIbu
             FBARANG.Show();
         }
 
-        private void dataBarangDetailToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FRM_BARANG_DETAIL FBARANGD = new FRM_BARANG_DETAIL();
-            FBARANGD.MdiParent = this;
-            FBARANGD.Show();
-        }
-
         private void dataSupplierToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FRM_SUPPLIER FPSUPPLIER = new FRM_SUPPLIER();
@@ -48,6 +41,13 @@ namespace ApotekMutiaraIbu
             this.Hide();
             FRM_LOGIN FLOGIN = new FRM_LOGIN();
             FLOGIN.Show();
+        }
+
+        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_ORDER FORDER = new FRM_ORDER();
+            FORDER.MdiParent = this;
+            FORDER.Show();
         }
     }
 }
