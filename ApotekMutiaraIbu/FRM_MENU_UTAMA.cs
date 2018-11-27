@@ -43,11 +43,16 @@ namespace ApotekMutiaraIbu
             FLOGIN.Show();
         }
 
-        private void orderToolStripMenuItem_Click(object sender, EventArgs e)
+        private void penerimaanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FRM_ORDER FORDER = new FRM_ORDER();
-            FORDER.MdiParent = this;
-            FORDER.Show();
+            FRM_MASUK FTERIMA = new FRM_MASUK();
+            FTERIMA.MdiParent = this;
+            FTERIMA.Show();
+        }
+
+        private void penjualanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

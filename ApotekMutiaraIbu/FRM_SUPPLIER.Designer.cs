@@ -218,7 +218,7 @@
             this.groupBox1.Size = new System.Drawing.Size(640, 418);
             this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pencarian berdasarkan Kode Supplier";
+            this.groupBox1.Text = "Pencarian berdasarkan Nama Supplier";
             // 
             // dataGridView1
             // 

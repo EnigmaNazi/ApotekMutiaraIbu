@@ -165,7 +165,7 @@ namespace ApotekMutiaraIbu
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM tbl_supplier WHERE kode_supplier like '%" + txt_search.Text + "%'";
+            string query = "SELECT * FROM tbl_supplier WHERE nama_supplier like '%" + txt_search.Text + "%'";
             cmd = new SqlCommand(query, con);
             adapt = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();

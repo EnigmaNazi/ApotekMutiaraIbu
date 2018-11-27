@@ -46,6 +46,7 @@
             this.txt_harga = new System.Windows.Forms.TextBox();
             this.txt_nama_barang = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.button_edit_stock = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_refresh = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -194,7 +195,9 @@
             this.cmb_jenis_obat.Items.AddRange(new object[] {
             "Obat Bebas",
             "Obat Bebas Terbatas",
-            "Obat Terbatas"});
+            "Obat Keras",
+            "Obat Narkotika",
+            "Obat Psikotropika"});
             this.cmb_jenis_obat.Location = new System.Drawing.Point(765, 138);
             this.cmb_jenis_obat.Name = "cmb_jenis_obat";
             this.cmb_jenis_obat.Size = new System.Drawing.Size(465, 44);
@@ -261,12 +264,26 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel3.Controls.Add(this.button_edit_stock);
             this.panel3.Controls.Add(this.button_delete);
             this.panel3.Controls.Add(this.button_refresh);
             this.panel3.Location = new System.Drawing.Point(13, 209);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(237, 53);
+            this.panel3.Size = new System.Drawing.Size(364, 53);
             this.panel3.TabIndex = 58;
+            // 
+            // button_edit_stock
+            // 
+            this.button_edit_stock.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button_edit_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_edit_stock.Location = new System.Drawing.Point(122, 6);
+            this.button_edit_stock.Margin = new System.Windows.Forms.Padding(4);
+            this.button_edit_stock.Name = "button_edit_stock";
+            this.button_edit_stock.Size = new System.Drawing.Size(112, 43);
+            this.button_edit_stock.TabIndex = 14;
+            this.button_edit_stock.Text = "Edit Stock";
+            this.button_edit_stock.UseVisualStyleBackColor = false;
+            this.button_edit_stock.Click += new System.EventHandler(this.button_edit_stock_Click);
             // 
             // button_delete
             // 
@@ -285,7 +302,7 @@
             // 
             this.button_refresh.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_refresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_refresh.Location = new System.Drawing.Point(120, 6);
+            this.button_refresh.Location = new System.Drawing.Point(241, 6);
             this.button_refresh.Margin = new System.Windows.Forms.Padding(4);
             this.button_refresh.Name = "button_refresh";
             this.button_refresh.Size = new System.Drawing.Size(112, 43);
@@ -355,7 +372,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1235, 493);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pencarian berdasarkan Barcode";
+            this.groupBox1.Text = "Pencarian berdasarkan Nomor Batch";
             // 
             // txt_search
             // 
@@ -432,5 +449,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button_edit_stock;
     }
 }

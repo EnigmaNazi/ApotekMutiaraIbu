@@ -34,11 +34,12 @@ namespace ApotekMutiaraIbu
             txt_kode_barang.Text = "";
             txt_nama_barang.Text = "";
             txt_harga.Text = "";
-            txt_stock.Text = "";
+            txt_stock.Text = "0";
             dateTimePicker1.Text = "";
             dateTimePicker2.Text = "";
             cmb_satuan.Text = "";
             cmb_jenis_obat.Text = "";
+            txt_stock.Enabled = false;
         }
 
         public FRM_BARANG()
@@ -156,6 +157,11 @@ namespace ApotekMutiaraIbu
             {
                 MessageBox.Show("Klik isi tabel!");
             }
+        }
+
+        private void button_edit_stock_Click(object sender, EventArgs e)
+        {
+            txt_stock.Enabled = true;
         }
     }
 }

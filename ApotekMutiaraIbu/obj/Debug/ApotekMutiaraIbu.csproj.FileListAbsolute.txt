@@ -10,4 +10,8 @@ D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIb
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.pdb
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_BARANG.resources
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_SUPPLIER.resources
-D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_ORDER.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_MASUK.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIbu.exe.manifest
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIbu.application
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.exe.manifest
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.application

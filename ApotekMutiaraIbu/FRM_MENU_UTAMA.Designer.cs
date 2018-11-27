@@ -37,7 +37,6 @@
             this.dataBarangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataSupplierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tRANSAKSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penerimaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lAPORANToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,7 +129,6 @@
             // tRANSAKSIToolStripMenuItem
             // 
             this.tRANSAKSIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orderToolStripMenuItem,
             this.penerimaanToolStripMenuItem,
             this.penjualanToolStripMenuItem});
             this.tRANSAKSIToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -139,24 +137,19 @@
             this.tRANSAKSIToolStripMenuItem.Size = new System.Drawing.Size(111, 32);
             this.tRANSAKSIToolStripMenuItem.Text = "Transaksi";
             // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(195, 32);
-            this.orderToolStripMenuItem.Text = "Order";
-            this.orderToolStripMenuItem.Click += new System.EventHandler(this.orderToolStripMenuItem_Click);
-            // 
             // penerimaanToolStripMenuItem
             // 
             this.penerimaanToolStripMenuItem.Name = "penerimaanToolStripMenuItem";
-            this.penerimaanToolStripMenuItem.Size = new System.Drawing.Size(195, 32);
-            this.penerimaanToolStripMenuItem.Text = "Penerimaan";
+            this.penerimaanToolStripMenuItem.Size = new System.Drawing.Size(219, 32);
+            this.penerimaanToolStripMenuItem.Text = "Barang Masuk";
+            this.penerimaanToolStripMenuItem.Click += new System.EventHandler(this.penerimaanToolStripMenuItem_Click);
             // 
             // penjualanToolStripMenuItem
             // 
             this.penjualanToolStripMenuItem.Name = "penjualanToolStripMenuItem";
-            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(195, 32);
+            this.penjualanToolStripMenuItem.Size = new System.Drawing.Size(219, 32);
             this.penjualanToolStripMenuItem.Text = "Penjualan";
+            this.penjualanToolStripMenuItem.Click += new System.EventHandler(this.penjualanToolStripMenuItem_Click);
             // 
             // lAPORANToolStripMenuItem
             // 
@@ -271,7 +264,6 @@
         private System.Windows.Forms.ToolStripMenuItem dataBarangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataSupplierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tRANSAKSIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penerimaanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lAPORANToolStripMenuItem;
