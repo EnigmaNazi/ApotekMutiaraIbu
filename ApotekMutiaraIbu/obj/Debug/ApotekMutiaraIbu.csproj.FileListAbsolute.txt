@@ -16,3 +16,6 @@ D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\bin\Debug\ApotekMutiaraIb
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.exe.manifest
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.application
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_PENJUALAN.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_CETAK_BELI.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.AdminMasterOptions.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.MasukAdminMaster.resources

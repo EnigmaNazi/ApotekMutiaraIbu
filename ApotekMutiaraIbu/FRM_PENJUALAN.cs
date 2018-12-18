@@ -267,5 +267,11 @@ namespace ApotekMutiaraIbu
             adapt.Fill(dt);
             dg_barang.DataSource = dt;
         }
+
+        private void btn_print_Click(object sender, EventArgs e)
+        {
+            FRM_CETAK_BELI CB = new FRM_CETAK_BELI();
+            CB.Show();
+        }
     }
 }

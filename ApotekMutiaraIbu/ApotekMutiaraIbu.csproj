@@ -60,8 +60,15 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,11 +79,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMasterOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMasterOptions.Designer.cs">
+      <DependentUpon>AdminMasterOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CETAK_PENJUALAN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CETAK_PENJUALAN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="FRM_BARANG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_BARANG.Designer.cs">
       <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CETAK_BELI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CETAK_BELI.Designer.cs">
+      <DependentUpon>FRM_CETAK_BELI.cs</DependentUpon>
     </Compile>
     <Compile Include="FRM_MENU_UTAMA.cs">
       <SubType>Form</SubType>
@@ -108,10 +133,26 @@
     <Compile Include="FRM_SUPPLIER.Designer.cs">
       <DependentUpon>FRM_SUPPLIER.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasukAdminMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasukAdminMaster.Designer.cs">
+      <DependentUpon>MasukAdminMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminMasterOptions.resx">
+      <DependentUpon>AdminMasterOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CETAK_PENJUALAN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CETAK_PENJUALAN.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_BARANG.resx">
       <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CETAK_BELI.resx">
+      <DependentUpon>FRM_CETAK_BELI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_MENU_UTAMA.resx">
       <DependentUpon>FRM_MENU_UTAMA.cs</DependentUpon>
@@ -127,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_SUPPLIER.resx">
       <DependentUpon>FRM_SUPPLIER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasukAdminMaster.resx">
+      <DependentUpon>MasukAdminMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,6 +211,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

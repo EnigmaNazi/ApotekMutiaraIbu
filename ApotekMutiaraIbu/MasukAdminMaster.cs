@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace ApotekMutiaraIbu
 {
-    public partial class FRM_LOGIN : Form
+    public partial class MasukAdminMaster : Form
     {
         SqlConnection con = new SqlConnection("Server=DESKTOP-6PC0I83;Database=ApotekMutiaraIbu;Integrated Security=true;");
 
-        public FRM_LOGIN()
+        public MasukAdminMaster()
         {
             InitializeComponent();
         }
@@ -26,38 +26,29 @@ namespace ApotekMutiaraIbu
             SqlCommand com = new SqlCommand();
             com.Connection = con;
             com.CommandType = CommandType.Text;
-            string strSQL = " select * from tbl_login where username ='" + txt_username.Text
-                + "' and password='" + txt_password.Text + "'";
+            string strSQL = " select * from tbl_login where username ='Admin' and password='" + txt_password.Text + "'";
 
             com.CommandText = strSQL;
             SqlDataReader datareader = com.ExecuteReader();
             if (datareader.Read())
             {
                 MessageBox.Show("Login berhasil", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                FRM_MENU_UTAMA menu = new FRM_MENU_UTAMA();
-                menu.ShowDialog();
+                AdminMasterOptions AMO = new AdminMasterOptions();
+                AMO.ShowDialog();
                 this.Hide();
             }
             else
             {
                 MessageBox.Show("Username dan Password Salah", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txt_username.Text = "";
                 txt_password.Text = "";
-                txt_username.Focus();
             }
             con.Close();
         }
 
         private void btn_batal_Click(object sender, EventArgs e)
         {
-            txt_username.Text = "";
-            txt_password.Text = "";
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            MasukAdminMaster MAM = new MasukAdminMaster();
-            MAM.Show();
+            FRM_LOGIN LG = new FRM_LOGIN();
+            LG.Show();
             this.Hide();
         }
     }
