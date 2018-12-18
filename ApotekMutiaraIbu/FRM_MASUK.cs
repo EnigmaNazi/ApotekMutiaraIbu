@@ -172,6 +172,25 @@ namespace ApotekMutiaraIbu
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            int stock, jumlah_masuk, stock_akhir;
+            stock = int.Parse(txt_stock.Text);
+            jumlah_masuk = int.Parse(txt_jumlah_masuk.Text);
+            stock_akhir = stock - jumlah_masuk;
+
+            if (txt_no_masuk.Text != "" && txt_kode_barang.Text != "" && txt_kode_supplier.Text != "" && txt_jumlah_masuk.Text != "")
+            {
+                cmd = new SqlCommand("update tbl_barang set stock=@stock_akhir where kode_barang=@kode_barang", con);
+                con.Open();
+                cmd.Parameters.AddWithValue("@stock_akhir", stock_akhir);
+                cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("gagal simpan");
+            }
+
             if (txt_nama_barang.Text != "")
             {
                 cmd = new SqlCommand("delete tbl_masuk where kode_barang=@kode_barang", con);
@@ -207,6 +226,7 @@ namespace ApotekMutiaraIbu
                 txt_nama_supplier.Text = dg_supplier.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txt_no_telp.Text = dg_supplier.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txt_alamat.Text = dg_supplier.Rows[e.RowIndex].Cells[3].Value.ToString();
+                DisplayDataSupplier();
                 group_cari_supplier.Visible = false;
             }
             catch (Exception)
@@ -237,12 +257,13 @@ namespace ApotekMutiaraIbu
             try
             {
                 txt_no_masuk.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txt_kode_supplier.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txt_jumlah_masuk.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
                 dg_supplier_CellContentClick(sender, e);
                 dg_barang_CellContentClick(sender, e);
+                txt_kode_supplier.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txt_jumlah_masuk.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                DisplayData();
             }
             catch (Exception)
             {

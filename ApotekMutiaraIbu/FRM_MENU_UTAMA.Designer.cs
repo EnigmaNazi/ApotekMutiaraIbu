@@ -39,14 +39,6 @@
             this.tRANSAKSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penerimaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lAPORANToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kartuStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPenjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanPenerimaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataBarangToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataSupplierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bANTUANToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bantuanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tentangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,8 +50,6 @@
             this.fILEToolStripMenuItem,
             this.mASTERToolStripMenuItem,
             this.tRANSAKSIToolStripMenuItem,
-            this.lAPORANToolStripMenuItem,
-            this.bANTUANToolStripMenuItem,
             this.tentangToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -149,66 +139,6 @@
             this.penjualanToolStripMenuItem.Text = "Penjualan";
             this.penjualanToolStripMenuItem.Click += new System.EventHandler(this.penjualanToolStripMenuItem_Click);
             // 
-            // lAPORANToolStripMenuItem
-            // 
-            this.lAPORANToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.kartuStockToolStripMenuItem,
-            this.laporanPenjualanToolStripMenuItem,
-            this.laporanPenerimaanToolStripMenuItem,
-            this.dataBarangToolStripMenuItem1,
-            this.dataSupplierToolStripMenuItem1});
-            this.lAPORANToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lAPORANToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lAPORANToolStripMenuItem.Name = "lAPORANToolStripMenuItem";
-            this.lAPORANToolStripMenuItem.Size = new System.Drawing.Size(100, 32);
-            this.lAPORANToolStripMenuItem.Text = "Laporan";
-            // 
-            // kartuStockToolStripMenuItem
-            // 
-            this.kartuStockToolStripMenuItem.Name = "kartuStockToolStripMenuItem";
-            this.kartuStockToolStripMenuItem.Size = new System.Drawing.Size(277, 32);
-            this.kartuStockToolStripMenuItem.Text = "Kartu Stock";
-            // 
-            // laporanPenjualanToolStripMenuItem
-            // 
-            this.laporanPenjualanToolStripMenuItem.Name = "laporanPenjualanToolStripMenuItem";
-            this.laporanPenjualanToolStripMenuItem.Size = new System.Drawing.Size(277, 32);
-            this.laporanPenjualanToolStripMenuItem.Text = "Laporan Penjualan";
-            // 
-            // laporanPenerimaanToolStripMenuItem
-            // 
-            this.laporanPenerimaanToolStripMenuItem.Name = "laporanPenerimaanToolStripMenuItem";
-            this.laporanPenerimaanToolStripMenuItem.Size = new System.Drawing.Size(277, 32);
-            this.laporanPenerimaanToolStripMenuItem.Text = "Laporan Penerimaan";
-            // 
-            // dataBarangToolStripMenuItem1
-            // 
-            this.dataBarangToolStripMenuItem1.Name = "dataBarangToolStripMenuItem1";
-            this.dataBarangToolStripMenuItem1.Size = new System.Drawing.Size(277, 32);
-            this.dataBarangToolStripMenuItem1.Text = "Data Barang";
-            // 
-            // dataSupplierToolStripMenuItem1
-            // 
-            this.dataSupplierToolStripMenuItem1.Name = "dataSupplierToolStripMenuItem1";
-            this.dataSupplierToolStripMenuItem1.Size = new System.Drawing.Size(277, 32);
-            this.dataSupplierToolStripMenuItem1.Text = "Data Supplier";
-            // 
-            // bANTUANToolStripMenuItem
-            // 
-            this.bANTUANToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bantuanToolStripMenuItem1});
-            this.bANTUANToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bANTUANToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.bANTUANToolStripMenuItem.Name = "bANTUANToolStripMenuItem";
-            this.bANTUANToolStripMenuItem.Size = new System.Drawing.Size(103, 32);
-            this.bANTUANToolStripMenuItem.Text = "Bantuan";
-            // 
-            // bantuanToolStripMenuItem1
-            // 
-            this.bantuanToolStripMenuItem1.Name = "bantuanToolStripMenuItem1";
-            this.bantuanToolStripMenuItem1.Size = new System.Drawing.Size(163, 32);
-            this.bantuanToolStripMenuItem1.Text = "Bantuan";
-            // 
             // tentangToolStripMenuItem
             // 
             this.tentangToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -250,14 +180,6 @@
         private System.Windows.Forms.ToolStripMenuItem tRANSAKSIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penerimaanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lAPORANToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kartuStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPenjualanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laporanPenerimaanToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataBarangToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem dataSupplierToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem bANTUANToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bantuanToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tentangToolStripMenuItem;
     }
 }

@@ -186,6 +186,25 @@ namespace ApotekMutiaraIbu
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
+            int stock, jumlah_beli, stock_akhir;
+            stock = int.Parse(txt_stock.Text);
+            jumlah_beli = int.Parse(txt_jumlah_beli.Text);
+            stock_akhir = stock + jumlah_beli;
+
+            if (txt_no_penjualan.Text != "" && txt_kode_barang.Text != "" && txt_nama_barang.Text != "" && txt_jumlah_beli.Text != "" && txt_subtotal.Text != "" && txt_keterangan.Text != "")
+            {
+                cmd = new SqlCommand("update tbl_barang set stock=@stock_akhir where kode_barang=@kode_barang", con);
+                con.Open();
+                cmd.Parameters.AddWithValue("@stock_akhir", stock_akhir);
+                cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("gagal simpan");
+            }
+
             if (txt_kode_barang.Text != "" && txt_nama_barang.Text != "")
             {
                 cmd = new SqlCommand("delete tbl_penjualan where kode_barang=@kode_barang", con);
@@ -243,6 +262,7 @@ namespace ApotekMutiaraIbu
             try
             {
                 txt_no_penjualan.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                dg_barang_CellContentClick(sender, e);
                 dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
                 txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txt_nama_barang.Text = dg_barang.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -250,7 +270,7 @@ namespace ApotekMutiaraIbu
                 txt_subtotal.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
                 txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
                 cmb_penjual.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                dg_barang_CellContentClick(sender, e);
+                DisplayData();
             }
             catch (Exception)
             {
