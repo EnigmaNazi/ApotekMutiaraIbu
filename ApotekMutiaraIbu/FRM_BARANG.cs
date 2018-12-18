@@ -53,21 +53,28 @@ namespace ApotekMutiaraIbu
         {
             if (txt_kode_barang.Text != "" && txt_nama_barang.Text != "" && txt_harga.Text != "" && txt_stock.Text != "" && cmb_satuan.Text != "" && cmb_jenis_obat.Text != "")
             {
-                cmd = new SqlCommand("insert into tbl_barang(kode_barang,nama_barang,harga,stock,tgl_dibuat,exp,satuan,jenis_obat) values(@kode_barang,@nama_barang,@harga,@stock,@tgl_dibuat,@exp,@satuan,@jenis_obat)", con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
-                cmd.Parameters.AddWithValue("@nama_barang", txt_nama_barang.Text);
-                cmd.Parameters.AddWithValue("@harga", txt_harga.Text);
-                cmd.Parameters.AddWithValue("@stock", txt_stock.Text);
-                cmd.Parameters.Add("@tgl_dibuat", SqlDbType.DateTime).Value = dateTimePicker1.Value.Date;
-                cmd.Parameters.Add("@exp", SqlDbType.DateTime).Value = dateTimePicker2.Value.Date;
-                cmd.Parameters.AddWithValue("@satuan", cmb_satuan.Text);
-                cmd.Parameters.AddWithValue("@jenis_obat", cmb_jenis_obat.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Data berhasil disimpan");
-                DisplayData();
-                cleartext();
+                try
+                {
+                    cmd = new SqlCommand("insert into tbl_barang(kode_barang,nama_barang,harga,stock,tgl_dibuat,exp,satuan,jenis_obat) values(@kode_barang,@nama_barang,@harga,@stock,@tgl_dibuat,@exp,@satuan,@jenis_obat)", con);
+                    con.Open();
+                    cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                    cmd.Parameters.AddWithValue("@nama_barang", txt_nama_barang.Text);
+                    cmd.Parameters.AddWithValue("@harga", txt_harga.Text);
+                    cmd.Parameters.AddWithValue("@stock", txt_stock.Text);
+                    cmd.Parameters.Add("@tgl_dibuat", SqlDbType.DateTime).Value = dateTimePicker1.Value.Date;
+                    cmd.Parameters.Add("@exp", SqlDbType.DateTime).Value = dateTimePicker2.Value.Date;
+                    cmd.Parameters.AddWithValue("@satuan", cmb_satuan.Text);
+                    cmd.Parameters.AddWithValue("@jenis_obat", cmb_jenis_obat.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Data berhasil disimpan");
+                    DisplayData();
+                    cleartext();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Klik tombol 'Edit' untuk merubah isi tabel!");
+                }
             }
             else
             {
@@ -157,11 +164,6 @@ namespace ApotekMutiaraIbu
             {
                 MessageBox.Show("Klik isi tabel!");
             }
-        }
-
-        private void button_edit_stock_Click(object sender, EventArgs e)
-        {
-            txt_stock.Enabled = true;
         }
     }
 }

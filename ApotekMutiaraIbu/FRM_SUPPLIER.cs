@@ -78,17 +78,24 @@ namespace ApotekMutiaraIbu
         {
             if (txt_kode_supplier.Text != "" && txt_nama_supplier.Text != "" && txt_telp_supplier.Text != "" && txt_alamat_supplier.Text != "")
             {
-                cmd = new SqlCommand("insert into tbl_supplier(kode_supplier,nama_supplier,telp_supplier,alamat_supplier) values(@kode_supplier,@nama_supplier,@telp_supplier,@alamat_supplier)", con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@kode_supplier", txt_kode_supplier.Text);
-                cmd.Parameters.AddWithValue("@nama_supplier", txt_nama_supplier.Text);
-                cmd.Parameters.AddWithValue("@telp_supplier", txt_telp_supplier.Text);
-                cmd.Parameters.AddWithValue("@alamat_supplier", txt_alamat_supplier.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Data berhasil disimpan");
-                DisplayData();
-                cleartext();
+                try
+                {
+                    cmd = new SqlCommand("insert into tbl_supplier(kode_supplier,nama_supplier,telp_supplier,alamat_supplier) values(@kode_supplier,@nama_supplier,@telp_supplier,@alamat_supplier)", con);
+                    con.Open();
+                    cmd.Parameters.AddWithValue("@kode_supplier", txt_kode_supplier.Text);
+                    cmd.Parameters.AddWithValue("@nama_supplier", txt_nama_supplier.Text);
+                    cmd.Parameters.AddWithValue("@telp_supplier", txt_telp_supplier.Text);
+                    cmd.Parameters.AddWithValue("@alamat_supplier", txt_alamat_supplier.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Data berhasil disimpan");
+                    DisplayData();
+                    cleartext();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Klik tombol 'Edit' untuk merubah isi tabel!");
+                }
             }
             else
             {
