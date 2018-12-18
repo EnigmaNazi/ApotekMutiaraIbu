@@ -40,6 +40,8 @@
             this.penerimaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tentangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cetakBulananToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.penjualanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.fILEToolStripMenuItem,
             this.mASTERToolStripMenuItem,
             this.tRANSAKSIToolStripMenuItem,
+            this.cetakBulananToolStripMenuItem,
             this.tentangToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -147,6 +150,23 @@
             this.tentangToolStripMenuItem.Size = new System.Drawing.Size(100, 32);
             this.tentangToolStripMenuItem.Text = "Tentang";
             // 
+            // cetakBulananToolStripMenuItem
+            // 
+            this.cetakBulananToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.penjualanToolStripMenuItem1});
+            this.cetakBulananToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cetakBulananToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.cetakBulananToolStripMenuItem.Name = "cetakBulananToolStripMenuItem";
+            this.cetakBulananToolStripMenuItem.Size = new System.Drawing.Size(160, 32);
+            this.cetakBulananToolStripMenuItem.Text = "Cetak Bulanan";
+            // 
+            // penjualanToolStripMenuItem1
+            // 
+            this.penjualanToolStripMenuItem1.Name = "penjualanToolStripMenuItem1";
+            this.penjualanToolStripMenuItem1.Size = new System.Drawing.Size(176, 32);
+            this.penjualanToolStripMenuItem1.Text = "Penjualan";
+            this.penjualanToolStripMenuItem1.Click += new System.EventHandler(this.penjualanToolStripMenuItem1_Click);
+            // 
             // FRM_MENU_UTAMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,5 +201,7 @@
         private System.Windows.Forms.ToolStripMenuItem penerimaanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tentangToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cetakBulananToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem1;
     }
 }

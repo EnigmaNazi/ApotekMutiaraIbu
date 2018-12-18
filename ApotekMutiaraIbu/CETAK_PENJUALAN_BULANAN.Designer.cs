@@ -1,6 +1,6 @@
 ﻿namespace ApotekMutiaraIbu
 {
-    partial class FRM_CETAK_BELI
+    partial class CETAK_PENJUALAN_BULANAN
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.CETAK_PENJUALAN1 = new ApotekMutiaraIbu.CETAK_PENJUALAN();
+            this.PENJUALAN_BULANAN1 = new ApotekMutiaraIbu.PENJUALAN_BULANAN();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,20 +40,20 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CETAK_PENJUALAN1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1386, 768);
+            this.crystalReportViewer1.ReportSource = this.PENJUALAN_BULANAN1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1316, 784);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // FRM_CETAK_BELI
+            // CETAK_PENJUALAN_BULANAN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1386, 768);
+            this.ClientSize = new System.Drawing.Size(1316, 784);
             this.Controls.Add(this.crystalReportViewer1);
             this.MinimizeBox = false;
-            this.Name = "FRM_CETAK_BELI";
+            this.Name = "CETAK_PENJUALAN_BULANAN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FRM_CETAK_BELI";
+            this.Text = "CETAK_PENJUALAN_BULANAN";
             this.TopMost = true;
             this.ResumeLayout(false);
 
@@ -62,6 +62,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CETAK_PENJUALAN CETAK_PENJUALAN1;
+        private PENJUALAN_BULANAN PENJUALAN_BULANAN1;
     }
 }

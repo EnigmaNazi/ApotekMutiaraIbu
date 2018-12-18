@@ -19,3 +19,5 @@ D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIb
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_CETAK_BELI.resources
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.AdminMasterOptions.resources
 D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.MasukAdminMaster.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.CETAK_PENJUALAN_BULANAN.resources
+D:\Kuliah\Semester 7\ApotekMutiaraIbu\ApotekMutiaraIbu\obj\Debug\ApotekMutiaraIbu.FRM_PENJUALAN_BULANAN.resources

@@ -44,7 +44,7 @@ namespace ApotekMutiaraIbu
             string urut;
 
             con.Open();
-            cmd = new SqlCommand("select no_penjualan from tbl_penjualan_detail where no_penjualan in(select max(no_penjualan) from tbl_penjualan_detail) order by no_penjualan desc", con);
+            cmd = new SqlCommand("select no_penjualan from tbl_penjualan_tahunan where no_penjualan in(select max(no_penjualan) from tbl_penjualan_tahunan) order by no_penjualan desc", con);
             rd = cmd.ExecuteReader();
             rd.Read();
             if (rd.HasRows)

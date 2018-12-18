@@ -56,5 +56,12 @@ namespace ApotekMutiaraIbu
             FJUAL.MdiParent = this;
             FJUAL.Show();
         }
+
+        private void penjualanToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FRM_PENJUALAN_BULANAN FPB = new FRM_PENJUALAN_BULANAN();
+            FPB.MdiParent = this;
+            FPB.Show();
+        }
     }
 }

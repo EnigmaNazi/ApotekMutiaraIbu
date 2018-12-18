@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -91,6 +91,12 @@
       <DependentUpon>CETAK_PENJUALAN.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CETAK_PENJUALAN_BULANAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CETAK_PENJUALAN_BULANAN.Designer.cs">
+      <DependentUpon>CETAK_PENJUALAN_BULANAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_BARANG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     <Compile Include="FRM_PENJUALAN.Designer.cs">
       <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_PENJUALAN_BULANAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PENJUALAN_BULANAN.Designer.cs">
+      <DependentUpon>FRM_PENJUALAN_BULANAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_SUPPLIER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     <Compile Include="MasukAdminMaster.Designer.cs">
       <DependentUpon>MasukAdminMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="PENJUALAN_BULANAN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PENJUALAN_BULANAN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdminMasterOptions.resx">
@@ -147,6 +165,9 @@
     <EmbeddedResource Include="CETAK_PENJUALAN.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CETAK_PENJUALAN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CETAK_PENJUALAN_BULANAN.resx">
+      <DependentUpon>CETAK_PENJUALAN_BULANAN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRM_BARANG.resx">
       <DependentUpon>FRM_BARANG.cs</DependentUpon>
@@ -166,11 +187,18 @@
     <EmbeddedResource Include="FRM_PENJUALAN.resx">
       <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PENJUALAN_BULANAN.resx">
+      <DependentUpon>FRM_PENJUALAN_BULANAN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_SUPPLIER.resx">
       <DependentUpon>FRM_SUPPLIER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasukAdminMaster.resx">
       <DependentUpon>MasukAdminMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PENJUALAN_BULANAN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PENJUALAN_BULANAN.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
