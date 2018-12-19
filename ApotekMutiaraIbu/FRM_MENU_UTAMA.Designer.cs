@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_MENU_UTAMA));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fILEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,9 +40,9 @@
             this.tRANSAKSIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penerimaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tentangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cetakBulananToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tentangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,14 +143,6 @@
             this.penjualanToolStripMenuItem.Text = "Penjualan";
             this.penjualanToolStripMenuItem.Click += new System.EventHandler(this.penjualanToolStripMenuItem_Click);
             // 
-            // tentangToolStripMenuItem
-            // 
-            this.tentangToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tentangToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.tentangToolStripMenuItem.Name = "tentangToolStripMenuItem";
-            this.tentangToolStripMenuItem.Size = new System.Drawing.Size(100, 32);
-            this.tentangToolStripMenuItem.Text = "Tentang";
-            // 
             // cetakBulananToolStripMenuItem
             // 
             this.cetakBulananToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -167,10 +160,19 @@
             this.penjualanToolStripMenuItem1.Text = "Penjualan";
             this.penjualanToolStripMenuItem1.Click += new System.EventHandler(this.penjualanToolStripMenuItem1_Click);
             // 
+            // tentangToolStripMenuItem
+            // 
+            this.tentangToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tentangToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.tentangToolStripMenuItem.Name = "tentangToolStripMenuItem";
+            this.tentangToolStripMenuItem.Size = new System.Drawing.Size(100, 32);
+            this.tentangToolStripMenuItem.Text = "Tentang";
+            // 
             // FRM_MENU_UTAMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(943, 565);
             this.ControlBox = false;
             this.Controls.Add(this.menuStrip1);

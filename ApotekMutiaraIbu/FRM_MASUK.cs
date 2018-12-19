@@ -140,12 +140,14 @@ namespace ApotekMutiaraIbu
                     }
                     if (txt_no_masuk.Text != "" && txt_kode_barang.Text != "" && txt_kode_supplier.Text != "" && txt_jumlah_masuk.Text != "")
                     {
-                        cmd = new SqlCommand("insert into tbl_masuk(no_masuk,tgl_masuk,kode_supplier,kode_barang,jumlah_masuk,keterangan) values(@no_masuk,@tgl_masuk,@kode_supplier,@kode_barang,@jumlah_masuk,@keterangan)", con);
+                        cmd = new SqlCommand("insert into tbl_masuk(no_masuk,tgl_masuk,kode_supplier,nama_supplier,kode_barang,nama_barang,jumlah_masuk,keterangan) values(@no_masuk,@tgl_masuk,@kode_supplier,@nama_supplier,@kode_barang,@nama_barang,@jumlah_masuk,@keterangan)", con);
                         con.Open();
                         cmd.Parameters.AddWithValue("@no_masuk", txt_no_masuk.Text);
                         cmd.Parameters.Add("@tgl_masuk", SqlDbType.DateTime).Value = dateTimePicker1.Value.Date;
                         cmd.Parameters.AddWithValue("@kode_supplier", txt_kode_supplier.Text);
+                        cmd.Parameters.AddWithValue("@nama_supplier", txt_nama_supplier.Text);
                         cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                        cmd.Parameters.AddWithValue("@nama_barang", txt_nama_barang.Text);
                         cmd.Parameters.AddWithValue("@jumlah_masuk", txt_jumlah_masuk.Text);
                         cmd.Parameters.AddWithValue("@keterangan", txt_keterangan.Text);
                         cmd.ExecuteNonQuery();
@@ -172,26 +174,7 @@ namespace ApotekMutiaraIbu
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            int stock, jumlah_masuk, stock_akhir;
-            stock = int.Parse(txt_stock.Text);
-            jumlah_masuk = int.Parse(txt_jumlah_masuk.Text);
-            stock_akhir = stock - jumlah_masuk;
-
-            if (txt_no_masuk.Text != "" && txt_kode_barang.Text != "" && txt_kode_supplier.Text != "" && txt_jumlah_masuk.Text != "")
-            {
-                cmd = new SqlCommand("update tbl_barang set stock=@stock_akhir where kode_barang=@kode_barang", con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@stock_akhir", stock_akhir);
-                cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
-            else
-            {
-                MessageBox.Show("gagal simpan");
-            }
-
-            if (txt_nama_barang.Text != "")
+            if (txt_kode_barang.Text != "")
             {
                 cmd = new SqlCommand("delete tbl_masuk where kode_barang=@kode_barang", con);
                 con.Open();
@@ -205,7 +188,7 @@ namespace ApotekMutiaraIbu
             else
             {
                 MessageBox.Show("gagal hapus");
-            }
+            }       
         }
 
         private void pilih_supplier_Click(object sender, EventArgs e)
@@ -260,9 +243,15 @@ namespace ApotekMutiaraIbu
                 dg_supplier_CellContentClick(sender, e);
                 dg_barang_CellContentClick(sender, e);
                 txt_kode_supplier.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txt_jumlah_masuk.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txt_nama_supplier.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txt_nama_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txt_jumlah_masuk.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txt_no_telp.Text = "";
+                txt_alamat.Text = "";
+                txt_harga.Text = "";
+                txt_stock.Text = "";
                 DisplayData();
             }
             catch (Exception)

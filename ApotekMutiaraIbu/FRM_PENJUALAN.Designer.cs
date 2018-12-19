@@ -114,7 +114,7 @@
             this.group_cari_barang.Controls.Add(this.textBox14);
             this.group_cari_barang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.group_cari_barang.ForeColor = System.Drawing.Color.White;
-            this.group_cari_barang.Location = new System.Drawing.Point(0, 0);
+            this.group_cari_barang.Location = new System.Drawing.Point(1, 0);
             this.group_cari_barang.Name = "group_cari_barang";
             this.group_cari_barang.Size = new System.Drawing.Size(695, 278);
             this.group_cari_barang.TabIndex = 56;
@@ -172,7 +172,7 @@
             this.txt_jenis_obat.Multiline = true;
             this.txt_jenis_obat.Name = "txt_jenis_obat";
             this.txt_jenis_obat.Size = new System.Drawing.Size(444, 38);
-            this.txt_jenis_obat.TabIndex = 64;
+            this.txt_jenis_obat.TabIndex = 8;
             // 
             // txt_satuan
             // 
@@ -182,7 +182,7 @@
             this.txt_satuan.Multiline = true;
             this.txt_satuan.Name = "txt_satuan";
             this.txt_satuan.Size = new System.Drawing.Size(444, 38);
-            this.txt_satuan.TabIndex = 63;
+            this.txt_satuan.TabIndex = 7;
             // 
             // label6
             // 
@@ -214,7 +214,7 @@
             this.txt_harga.Multiline = true;
             this.txt_harga.Name = "txt_harga";
             this.txt_harga.Size = new System.Drawing.Size(444, 38);
-            this.txt_harga.TabIndex = 15;
+            this.txt_harga.TabIndex = 5;
             // 
             // label20
             // 
@@ -248,7 +248,7 @@
             this.txt_stock.Multiline = true;
             this.txt_stock.Name = "txt_stock";
             this.txt_stock.Size = new System.Drawing.Size(444, 38);
-            this.txt_stock.TabIndex = 10;
+            this.txt_stock.TabIndex = 6;
             // 
             // label13
             // 
@@ -269,7 +269,7 @@
             this.txt_nama_barang.Multiline = true;
             this.txt_nama_barang.Name = "txt_nama_barang";
             this.txt_nama_barang.Size = new System.Drawing.Size(444, 38);
-            this.txt_nama_barang.TabIndex = 6;
+            this.txt_nama_barang.TabIndex = 4;
             // 
             // txt_kode_barang
             // 
@@ -279,7 +279,7 @@
             this.txt_kode_barang.Multiline = true;
             this.txt_kode_barang.Name = "txt_kode_barang";
             this.txt_kode_barang.Size = new System.Drawing.Size(247, 38);
-            this.txt_kode_barang.TabIndex = 4;
+            this.txt_kode_barang.TabIndex = 3;
             // 
             // label10
             // 
@@ -324,7 +324,7 @@
             this.txt_no_penjualan.Multiline = true;
             this.txt_no_penjualan.Name = "txt_no_penjualan";
             this.txt_no_penjualan.Size = new System.Drawing.Size(200, 38);
-            this.txt_no_penjualan.TabIndex = 51;
+            this.txt_no_penjualan.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
@@ -333,7 +333,7 @@
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(482, 41);
-            this.dateTimePicker1.TabIndex = 52;
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // label2
             // 
@@ -423,7 +423,7 @@
             this.cmb_penjual.Location = new System.Drawing.Point(159, 155);
             this.cmb_penjual.Name = "cmb_penjual";
             this.cmb_penjual.Size = new System.Drawing.Size(351, 44);
-            this.cmb_penjual.TabIndex = 10;
+            this.cmb_penjual.TabIndex = 12;
             // 
             // label9
             // 
@@ -446,7 +446,7 @@
             this.txt_keterangan.Multiline = true;
             this.txt_keterangan.Name = "txt_keterangan";
             this.txt_keterangan.Size = new System.Drawing.Size(351, 38);
-            this.txt_keterangan.TabIndex = 8;
+            this.txt_keterangan.TabIndex = 11;
             // 
             // txt_subtotal
             // 
@@ -456,7 +456,7 @@
             this.txt_subtotal.Multiline = true;
             this.txt_subtotal.Name = "txt_subtotal";
             this.txt_subtotal.Size = new System.Drawing.Size(351, 38);
-            this.txt_subtotal.TabIndex = 7;
+            this.txt_subtotal.TabIndex = 10;
             // 
             // txt_jumlah_beli
             // 
@@ -466,7 +466,7 @@
             this.txt_jumlah_beli.Multiline = true;
             this.txt_jumlah_beli.Name = "txt_jumlah_beli";
             this.txt_jumlah_beli.Size = new System.Drawing.Size(351, 38);
-            this.txt_jumlah_beli.TabIndex = 6;
+            this.txt_jumlah_beli.TabIndex = 9;
             this.txt_jumlah_beli.TextChanged += new System.EventHandler(this.txt_jumlah_beli_TextChanged);
             // 
             // label8
@@ -575,7 +575,7 @@
             this.btn_print.Location = new System.Drawing.Point(17, 10);
             this.btn_print.Name = "btn_print";
             this.btn_print.Size = new System.Drawing.Size(202, 52);
-            this.btn_print.TabIndex = 0;
+            this.btn_print.TabIndex = 70;
             this.btn_print.Text = "Print";
             this.btn_print.UseVisualStyleBackColor = true;
             this.btn_print.Click += new System.EventHandler(this.btn_print_Click);

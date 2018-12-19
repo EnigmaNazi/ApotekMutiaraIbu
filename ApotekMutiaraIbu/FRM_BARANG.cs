@@ -165,5 +165,11 @@ namespace ApotekMutiaraIbu
                 MessageBox.Show("Klik isi tabel!");
             }
         }
+
+        private void btn_edit_stock_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Edit Stock hanya diperuntukkan jika ada barang yang dikembalikan!");
+            txt_stock.Enabled = true;
+        }
     }
 }
