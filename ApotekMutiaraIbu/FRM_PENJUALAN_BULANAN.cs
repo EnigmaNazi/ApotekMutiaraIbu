@@ -31,6 +31,7 @@ namespace ApotekMutiaraIbu
         public FRM_PENJUALAN_BULANAN()
         {
             InitializeComponent();
+            DisplayData();
         }
 
         private void btn_print_Click(object sender, EventArgs e)

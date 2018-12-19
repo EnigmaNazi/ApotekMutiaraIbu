@@ -88,7 +88,7 @@ namespace ApotekMutiaraIbu
         public FRM_PENJUALAN()
         {
             InitializeComponent();
-            DisplayData();;
+            DisplayData();
             DisplayDataBarang();
             cleartext();
         }

@@ -63,5 +63,12 @@ namespace ApotekMutiaraIbu
             FPB.MdiParent = this;
             FPB.Show();
         }
+
+        private void stockOpnameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FRM_STOCK_OPNAME SO = new FRM_STOCK_OPNAME();
+            SO.MdiParent = this;
+            SO.Show();
+        }
     }
 }

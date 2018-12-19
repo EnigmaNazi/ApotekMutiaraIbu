@@ -43,6 +43,7 @@
             this.cetakBulananToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.penjualanToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tentangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockOpnameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +98,8 @@
             // 
             this.mASTERToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dataBarangToolStripMenuItem,
-            this.dataSupplierToolStripMenuItem});
+            this.dataSupplierToolStripMenuItem,
+            this.stockOpnameToolStripMenuItem});
             this.mASTERToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mASTERToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.mASTERToolStripMenuItem.Name = "mASTERToolStripMenuItem";
@@ -107,14 +109,14 @@
             // dataBarangToolStripMenuItem
             // 
             this.dataBarangToolStripMenuItem.Name = "dataBarangToolStripMenuItem";
-            this.dataBarangToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
+            this.dataBarangToolStripMenuItem.Size = new System.Drawing.Size(221, 32);
             this.dataBarangToolStripMenuItem.Text = "Data Barang";
             this.dataBarangToolStripMenuItem.Click += new System.EventHandler(this.dataBarangToolStripMenuItem_Click);
             // 
             // dataSupplierToolStripMenuItem
             // 
             this.dataSupplierToolStripMenuItem.Name = "dataSupplierToolStripMenuItem";
-            this.dataSupplierToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
+            this.dataSupplierToolStripMenuItem.Size = new System.Drawing.Size(221, 32);
             this.dataSupplierToolStripMenuItem.Text = "Data Supplier";
             this.dataSupplierToolStripMenuItem.Click += new System.EventHandler(this.dataSupplierToolStripMenuItem_Click);
             // 
@@ -168,6 +170,13 @@
             this.tentangToolStripMenuItem.Size = new System.Drawing.Size(100, 32);
             this.tentangToolStripMenuItem.Text = "Tentang";
             // 
+            // stockOpnameToolStripMenuItem
+            // 
+            this.stockOpnameToolStripMenuItem.Name = "stockOpnameToolStripMenuItem";
+            this.stockOpnameToolStripMenuItem.Size = new System.Drawing.Size(221, 32);
+            this.stockOpnameToolStripMenuItem.Text = "Stock Opname";
+            this.stockOpnameToolStripMenuItem.Click += new System.EventHandler(this.stockOpnameToolStripMenuItem_Click);
+            // 
             // FRM_MENU_UTAMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,5 +214,6 @@
         private System.Windows.Forms.ToolStripMenuItem tentangToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cetakBulananToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem penjualanToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem stockOpnameToolStripMenuItem;
     }
 }
