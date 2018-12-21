@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_BARANG));
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             this.txt_harga = new System.Windows.Forms.TextBox();
             this.txt_nama_barang = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_edit_stock = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_refresh = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -168,7 +166,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.panel1.Controls.Add(this.btn_edit_stock);
             this.panel1.Controls.Add(this.cmb_jenis_obat);
             this.panel1.Controls.Add(this.cmb_satuan);
             this.panel1.Controls.Add(this.dateTimePicker2);
@@ -272,20 +269,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 53);
             this.panel3.TabIndex = 58;
-            // 
-            // btn_edit_stock
-            // 
-            this.btn_edit_stock.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_edit_stock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_edit_stock.BackgroundImage")));
-            this.btn_edit_stock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_edit_stock.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit_stock.Location = new System.Drawing.Point(193, 140);
-            this.btn_edit_stock.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_edit_stock.Name = "btn_edit_stock";
-            this.btn_edit_stock.Size = new System.Drawing.Size(42, 42);
-            this.btn_edit_stock.TabIndex = 14;
-            this.btn_edit_stock.UseVisualStyleBackColor = false;
-            this.btn_edit_stock.Click += new System.EventHandler(this.btn_edit_stock_Click);
             // 
             // button_delete
             // 
@@ -451,6 +434,5 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_search;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btn_edit_stock;
     }
 }

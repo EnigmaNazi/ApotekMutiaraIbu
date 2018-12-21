@@ -145,14 +145,15 @@ namespace ApotekMutiaraIbu
                             MessageBox.Show("gagal simpan");
                         }
 
-                        if (txt_no_penjualan.Text != "" && txt_kode_barang.Text != "" && txt_nama_barang.Text != "" && txt_jumlah_beli.Text != "" && txt_subtotal.Text != "" && txt_keterangan.Text != "")
+                        if (txt_no_penjualan.Text != "" && txt_kode_barang.Text != "" && txt_nama_barang.Text != "" && txt_stock.Text != "" && txt_jumlah_beli.Text != "" && txt_subtotal.Text != "" && txt_keterangan.Text != "")
                         {
-                            cmd = new SqlCommand("insert into tbl_penjualan(no_penjualan,tgl_penjualan,kode_barang,nama_barang,jumlah_beli,subtotal,keterangan,penjual) values(@no_penjualan,@tgl_penjualan,@kode_barang,@nama_barang,@jumlah_beli,@subtotal,@keterangan,@penjual)", con);
+                            cmd = new SqlCommand("insert into tbl_penjualan(no_penjualan,tgl_penjualan,kode_barang,nama_barang,stock,jumlah_beli,subtotal,keterangan,penjual) values(@no_penjualan,@tgl_penjualan,@kode_barang,@nama_barang,@stock_akhir,@jumlah_beli,@subtotal,@keterangan,@penjual)", con);
                             con.Open();
                             cmd.Parameters.AddWithValue("@no_penjualan", txt_no_penjualan.Text);
                             cmd.Parameters.Add("@tgl_penjualan", SqlDbType.DateTime).Value = dateTimePicker1.Value.Date;
                             cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
                             cmd.Parameters.AddWithValue("@nama_barang", txt_nama_barang.Text);
+                            cmd.Parameters.AddWithValue("@stock_akhir", stock_akhir);
                             cmd.Parameters.AddWithValue("@jumlah_beli", txt_jumlah_beli.Text);
                             cmd.Parameters.AddWithValue("@subtotal", txt_subtotal.Text);
                             cmd.Parameters.AddWithValue("@keterangan", txt_keterangan.Text);
@@ -186,20 +187,46 @@ namespace ApotekMutiaraIbu
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            if (txt_kode_barang.Text != "" && txt_nama_barang.Text != "")
+            try
             {
-                cmd = new SqlCommand("delete tbl_penjualan where kode_barang=@kode_barang", con);
-                con.Open();
-                cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("berhasil hapus");
-                DisplayData();
-                cleartext();
+                int stock, jumlah_beli, stock_akhir;
+                stock = int.Parse(txt_stock.Text);
+                jumlah_beli = int.Parse(txt_jumlah_beli.Text);
+                stock_akhir = stock + jumlah_beli;
+
+                if (txt_no_penjualan.Text != "" && txt_kode_barang.Text != "" && txt_nama_barang.Text != "" && txt_stock.Text != "" && txt_jumlah_beli.Text != "" && txt_subtotal.Text != "" && txt_keterangan.Text != "")
+                {
+                    cmd = new SqlCommand("update tbl_barang set stock=@stock_akhir where kode_barang=@kode_barang", con);
+                    con.Open();
+                    cmd.Parameters.AddWithValue("@stock_akhir", stock_akhir);
+                    cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("gagal simpan");
+                }
+
+                if (txt_kode_barang.Text != "" && txt_nama_barang.Text != "")
+                {
+                    cmd = new SqlCommand("delete tbl_penjualan where kode_barang=@kode_barang", con);
+                    con.Open();
+                    cmd.Parameters.AddWithValue("@kode_barang", txt_kode_barang.Text);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("berhasil hapus");
+                    DisplayData();
+                    cleartext();
+                }
+                else
+                {
+                    MessageBox.Show("gagal hapus");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("gagal hapus");
+                MessageBox.Show("Klik isi tabel yang akan dihapus!");
             }
         }
 
@@ -247,12 +274,12 @@ namespace ApotekMutiaraIbu
                 dg_barang_CellContentClick(sender, e);
                 txt_kode_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                 txt_nama_barang.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                txt_jumlah_beli.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-                txt_subtotal.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                cmb_penjual.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                txt_stock.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txt_jumlah_beli.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                txt_subtotal.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                txt_keterangan.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                cmb_penjual.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
                 txt_harga.Text = "";
-                txt_stock.Text = "";
                 txt_satuan.Text = "";
                 txt_jenis_obat.Text = "";
                 DisplayData();
